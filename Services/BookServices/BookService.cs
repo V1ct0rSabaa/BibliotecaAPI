@@ -189,6 +189,5 @@ public class BookService : IBook
             response.Status = false;
             return response;
         }
-        throw new NotImplementedException();
     }
 }
