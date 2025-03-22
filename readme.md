@@ -31,15 +31,15 @@ PrimeiraAPI/
 ├── Models/                           # Contém as classes de modelo de dados
 │   ├── Author.cs                     
 │   ├── Book.cs                       
-│   └── Response.cs                   # Resposta HTTP genérica para a API
+│   └── Response.cs                   # Resposta HTTP para a API
 │
 ├── DTO/                              # Contém os objetos de transferência de dados (DTOs)
 │   ├── AuthorDTO/                    
-│   │   ├── AuthorCreateDTO.cs        # DTO para criação de um autor
-│   │   └── AuthorUpdateDTO.cs        # DTO para atualização de um autor
+│   │   ├── AuthorCreateDTO.cs        
+│   │   └── AuthorUpdateDTO.cs        
 │   └── BookDTO/                      
-│       ├── BookCreateDTO.cs          # DTO para criação de um livro
-│       └── BookUpdateDTO.cs          # DTO para atualização de um livro
+│       ├── BookCreateDTO.cs          
+│       └── BookUpdateDTO.cs          
 │
 ├── Controllers/                      
 │   ├── AuthorController.cs           
@@ -63,7 +63,7 @@ Aqui está a documentação dos endpoints para os controladores `BookController`
 
 ### Endpoints da API
 
-#### **BookController**
+#### Gerenciamento de Livros - **BookController**
 
 1. **Listar Todos os Livros**
    - **Método:** `GET /api/book/ListBooks`
@@ -164,7 +164,7 @@ Aqui está a documentação dos endpoints para os controladores `BookController`
 
 ---
 
-#### **AuthorController**
+#### Gerenciamento de informações dos Autores - **AuthorController**
 
 1. **Listar Todos os Autores**
    - **Método:** `GET /api/author/ListAuthors`
